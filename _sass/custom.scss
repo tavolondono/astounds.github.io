@@ -1,0 +1,92 @@
+:root {
+	--bg:             #0d1117;
+	--brand-color:    #0062cc;
+	--brand-lg-color: #3395ff;
+	--link:           #3395ff;
+	--link-hover:     orange;
+	--text:           #FFFFFF;
+}
+
+@font-face {
+	font-family: "Noto Color Emoji";
+	src: url("/assets/NotoColorEmojiFlags.woff");
+}
+
+body {
+	background: var(--bg);
+	color: var(--text);
+}
+
+a {
+	color: var(--link);
+}
+
+a:hover {
+	color: var(--link-hover);
+	text-decoration: none;
+	border-bottom: 2px dashed var(--link-hover);
+}
+
+.site-header {
+	border-top: 5px solid var(--brand-color);
+	border-bottom: 1px solid var(--brand-lg-color);
+}
+
+.site-title, .site-title:visited {
+	color: var(--text);
+	text-decoration: none;
+}
+
+.site-title:hover {
+	text-decoration: underline;
+	border: none;
+}
+
+.translations {
+	text-align: end;
+	margin: 0 0 1em 0;
+}
+
+@media screen and (min-width: 800px) {
+	.translations {
+		width: 50%;
+		margin: 0 0 1em auto;
+	}
+}
+
+.translations p {
+	margin: 0 0 0.5em 0;
+}
+
+.translation {
+	line-height: 0.8em;
+	font-family: "Noto Color Emoji", sans-serif;
+	font-size: 2em;
+}
+
+.site-footer {
+	border-top: 1px solid var(--brand-lg-color);
+}
+
+.social-media-list a:hover .username {
+	text-decoration: none;
+}
+
+.footer-col-1, .footer-col-2 {
+	width: -webkit-calc(100% - (30px / 2));
+	width: calc(100% - (30px / 2));
+}
+
+// .footer-col-wrapper becomes "display: flex" on "min-width: 800px"
+@media screen and (min-width: 800px) {
+	.footer-col-1 {
+		width: -webkit-calc(70% - (30px / 2));
+		width: calc(70% - (30px / 2));
+	}
+	
+	.footer-col-2 {
+		text-align: right;
+		width: -webkit-calc(30% - (30px / 2));
+		width: calc(30% - (30px / 2));
+	}
+}

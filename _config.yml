@@ -1,0 +1,30 @@
+title: Personal Site from GitHub Pages.
+baseurl: ""
+url: "https://astounds.github.io"
+
+github_username: astounds
+repository: astounds/astounds.github.io
+
+collections:
+  translations:
+    output: true
+    permalink: /:name:output_ext
+
+
+# Build settings
+theme: minima
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - migrate.py
+  - CONTRIBUTING.md
+  - README*.md
