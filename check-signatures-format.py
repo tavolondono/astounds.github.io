@@ -127,6 +127,6 @@ for file_name in sorted(os.listdir("_data/signed")):
     if "name" in existing_keys and "link" in existing_keys and (existing_keys["name"] != 0 or existing_keys["link"] != 1):
         report(f"{file_name} incorrectly orders name and link. Please put the name on the first line and the link on the second line.")
 
-
+# comment by gualondo
 if not ok:
     raise SystemExit(1)
